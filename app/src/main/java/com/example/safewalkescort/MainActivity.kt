@@ -50,9 +50,10 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             getDeviceLocation()
         }
 
-        // 스레드로 처리 구현해야함!!!!!!
-        // 그렇지 않으면 메인 스레드에서 I/O Block이 걸리게 될 것이며
-        // 프로그램이 응답이 없어진다.
+        // TODO:
+        //  스레드로 처리 구현해야함!!!!!!
+        //  그렇지 않으면 메인 스레드에서 I/O Block이 걸리게 될 것이며
+        //  프로그램이 응답이 없어진다.
         readFromAssets("19_22_pedstrians utf-8.xlsx")
     }
 
